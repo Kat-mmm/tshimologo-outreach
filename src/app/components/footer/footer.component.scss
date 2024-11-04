@@ -1,0 +1,36 @@
+.footer-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
+    // background-color: #d4d4d4;
+
+    img{
+        width: 180px;
+        object-fit: cover;
+    }
+
+    .links{
+        width: 90%;
+        display: grid;
+        
+        .useful{
+            justify-self: center;
+            display: flex;
+            gap: 1rem;
+
+            a{
+                text-decoration: none;
+                color: #333;
+                cursor: pointer;
+                font-weight: 600;
+                font-size: 13px;
+            }
+
+            a:hover{
+                color: #636363;
+            }
+        }
+    }
+}

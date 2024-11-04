@@ -1,0 +1,128 @@
+/* General Section Styling */
+.about-us-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+}
+
+.about-us-header h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.subheadline {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+}
+
+/* Mission & Vision */
+.mission-vision {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.mission, .vision {
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.mission h3, .vision h3 {
+    color: #27ae60;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+/* Core Values */
+.core-values {
+    margin: 40px 0;
+}
+
+.core-values h3 {
+    font-size: 1.8rem;
+    color: #2980b9;
+    margin-bottom: 20px;
+}
+
+.values-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.value-box {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.value-box:hover {
+    transform: translateY(-5px);
+}
+
+.value-box .icon {
+    font-size: 2rem;
+    color: #2ecc71;
+    margin-bottom: 10px;
+}
+
+.value-box h4 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.value-box p {
+    font-size: 1rem;
+    color: #7f8c8d;
+}
+
+/* Why Choose Us */
+.why-choose-us {
+    max-width: 600px;
+    margin: 40px auto;
+    text-align: left;
+}
+
+h6{
+    color: #e67e22;
+}
+
+.why-choose-us h3 {
+    color: #e67e22;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.why-choose-us ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #34495e;
+}
+
+/* Call to Action Button */
+.cta {
+    margin: 40px 0;
+}
+
+.cta-button {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #2980b9;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #3498db;
+}
