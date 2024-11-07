@@ -1,7 +1,7 @@
 /* General Section Styling */
 .about-us-section {
     padding: 60px 20px;
-    background-color: #f9f9f9;
+    background-color: #f4f8ff;
     color: #333;
     text-align: center;
 }
@@ -19,49 +19,113 @@
 
 /* Mission & Vision */
 .mission-vision {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 40px 0;
+    gap: 5rem;
+    margin-top: 5rem;
+
+    .mission{
+        width: 80%;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        place-items: center;
+
+        .left{
+
+            img{
+                width: 70%;
+                object-fit: cover;
+            }
+        }
+
+        .right{
+
+            h3{
+                color: #27ae60;
+                font-size: 1.8rem;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .vision{
+        width: 80%;
+        display: grid;
+        grid-template-columns: 70% 30%;
+        place-items: center;
+
+        .left{
+
+            h3{
+                color: #ff3131;
+                font-size: 1.8rem;
+                margin-bottom: 10px;
+            }
+        }
+
+        .right{
+
+            img{
+                width: 70%;
+                object-fit: cover;
+            }
+
+        }
+    }
 }
 
-.mission, .vision {
-    max-width: 600px;
-    margin-bottom: 20px;
-}
+// .mission, .vision {
+//     max-width: 600px;
+//     margin-bottom: 20px;
+// }
 
 .mission h3, .vision h3 {
-    color: #27ae60;
-    font-size: 1.8rem;
-    margin-bottom: 10px;
+    font-family: 'Source Code Pro';
+    font-weight: 600;
 }
 
 /* Core Values */
 .core-values {
-    margin: 40px 0;
-}
+    display: grid;
+    place-items: center;
+    margin-top: 5rem;
 
-.core-values h3 {
-    font-size: 1.8rem;
-    color: #2980b9;
-    margin-bottom: 20px;
-}
+    .values-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 80%;
+        gap: 1rem;
 
-.values-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
+        .value-box {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            text-align: center;
 
-.value-box {
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 20px;
-    width: 250px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-    text-align: center;
+            img{
+                width: 70px;
+                height: 70px;
+                object-fit: cover;
+            }
+        }
+
+        .box-1{
+            text-align: left;
+            box-shadow: none;
+            background-color: transparent;
+
+            h3 {
+                font-size: 1.8rem;
+                color: #e67e22;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
 }
 
 .value-box:hover {

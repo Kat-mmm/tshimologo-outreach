@@ -4,7 +4,7 @@
     align-items: center;
     width: 100%;
     margin-top: 40px;
-    // background-color: #d4d4d4;
+    background-color: #d4d4d4;
 
     img{
         width: 180px;
@@ -33,4 +33,35 @@
             }
         }
     }
+
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 15px;
+        color: #333;
+        width: 90%;
+    
+        p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    
+        .social-links {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+    
+            a {
+                color: #333;
+                font-size: 1.2rem;
+                transition: color 0.3s;
+    
+                &:hover {
+                    color: #3498db;
+                }
+            }
+        }
+    }
+    
 }
