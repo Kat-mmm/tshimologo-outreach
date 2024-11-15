@@ -150,8 +150,8 @@
     @media (max-width: 768px) {
         display: flex;
         flex-direction: column;
-        gap: 3rem;
         align-items: center;
+        height: fit-content;
 
         .left{
             width: 100%;
@@ -172,8 +172,7 @@
             .contact-cont{
                 width: 90%;
             }
-        }
-        
+        }   
     }
 
 }
