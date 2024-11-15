@@ -17,69 +17,67 @@
     color: #7f8c8d;
 }
 
+
 /* Mission & Vision */
 .mission-vision {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5rem;
+    display: grid;
+    grid-template-columns: 60% 40%;
     margin-top: 5rem;
 
-    .mission{
-        width: 80%;
+    .mission, .vision {
+        width: 95%;
         display: grid;
-        grid-template-columns: 30% 70%;
-        place-items: center;
-
-        .left{
-
-            img{
-                width: 70%;
+        grid-template-columns: 15% 85%;
+        align-items: center;
+        position: relative;
+    
+        .left {
+            position: relative;
+    
+            img {
+                width: 128%; // Adjust width as needed for a balanced overlap
                 object-fit: cover;
+                position: relative;
+                top: -10px; // Move the image slightly up
+                left: 20px; // Overlap the image on the border
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); // Light shadow
+                border-radius: 50%; // Optional: match the border radius of the container
             }
         }
-
-        .right{
-
-            h3{
+    
+        .right {
+            padding: 20px;
+            border: 3px solid #68a450;
+            border-radius: 10px;
+            background-color: #fff;
+    
+            h3 {
                 color: #27ae60;
                 font-size: 1.8rem;
                 margin-bottom: 10px;
+                margin-left: 30px;
+                text-align: left;
+            }
+    
+            p {
+                font-size: 1rem;
+                color: #333;
+                margin-left: 30px;
+                text-align: left;
             }
         }
-    }
-
-    .vision{
-        width: 80%;
-        display: grid;
-        grid-template-columns: 70% 30%;
-        place-items: center;
-
-        .left{
-
-            h3{
-                color: #ff3131;
-                font-size: 1.8rem;
-                margin-bottom: 10px;
-            }
-        }
-
-        .right{
-
-            img{
-                width: 70%;
-                object-fit: cover;
-            }
-
-        }
-    }
+    }    
 
     @media screen and (max-width: 768px) {
-        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
 
         .mission, .vision{
             width: 100%;
+            grid-template-columns: 10% 90%;
         }
     }
 
@@ -91,7 +89,7 @@
 // }
 
 .mission h3, .vision h3 {
-    font-family: 'Source Code Pro';
+    // font-family: 'Source Code Pro';
     font-weight: 600;
 }
 
@@ -138,12 +136,12 @@
             display: flex;
             flex-direction: column;
             width: 100%;
+            margin-top: 1rem;
 
             .box-1{
                 width: 97%;
             }
         }
-
     }
 
 }

@@ -45,10 +45,11 @@
             background-color: #eff4ff;
             border-radius: 15px;
             padding-top: 1rem;
+            color: white;
             
             img{
-                width: 50px;
-                height: 50px;
+                width: 65px;
+                height: 65px;
                 object-fit: cover;
             }
 
@@ -62,14 +63,21 @@
 
         .schools{
             border: 1px solid #ff3131;
+            background-color: #c8262d;
+            // background-image: url('https://img.freepik.com/free-photo/abstract-luxury-soft-red-background-christmas-valentines-layout-design-studio-room-web-template-business-report-with-smooth-circle-gradient-color_1258-53408.jpg?t=st=1731637467~exp=1731641067~hmac=360cdc0612fd2976a53f9e09bb234080b9ec0e299b7c5f7b8599bcd8b5d77ee6&w=900');
         }
 
         .learners{
             border: 1px solid rgb(48, 129, 48);
+            background-color: #68a450;
+            // background-image: url('https://img.freepik.com/free-vector/gradient-background-green-tones_23-2148360453.jpg?t=st=1731637603~exp=1731641203~hmac=f2492aa0d67f5d26ff4e835194003c172ba1392fcaffafe7a1ddc77f173735ce&w=826');
+
         }
 
         .organisations{
             border: 1px solid #e67e22;
+            background-color: #e67e22;
+            // background-image: url('https://img.freepik.com/free-photo/abstract-orange-background-layout-designstudioroom-web-template-business-report-with-smooth-circle-g_1258-54100.jpg?t=st=1731637360~exp=1731640960~hmac=61a0e01f2b8813f1b432d21cf1d1003d73fe915fde7c46a70c39153a32a25b88&w=900');
         }
     }
 

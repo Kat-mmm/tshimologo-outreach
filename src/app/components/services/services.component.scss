@@ -29,53 +29,51 @@
         gap: 20px;
         width: 100%;
         max-width: 1200px;
-
+    
         .service {
             background-color: #fff;
             border-radius: 12px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            text-align: center;
+            overflow: hidden; // Ensures rounded corners for the image
             transition: transform 0.3s, box-shadow 0.3s;
-
+    
             &:hover {
                 transform: translateY(-5px);
                 box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
                 background-color: #2970ff;
-                
-                p{
-                    color: white;
-                }
-
-                h5{
-                    color: white;
-                }
-
-                img{
-                    background-color: transparent;
+    
+                .content {
+                    h5, p {
+                        color: white;
+                    }
                 }
             }
-
+    
             img {
-                width: 60px;
-                height: 60px;
-                margin-bottom: 15px;
+                width: 100%; // Full width for the card
+                height: 200px; // Adjust as needed for consistent height
                 object-fit: cover;
             }
-
-            h5 {
-                font-size: 1rem;
-                color: #333;
-                margin-bottom: 10px;
-                text-transform: uppercase;
-                letter-spacing: 1px;
-            }
-
-            p {
-                font-size: 1rem;
-                color: #777;
-                line-height: 1.5;
+    
+            .content {
+                padding: 20px;
+                text-align: center;
+    
+                h5 {
+                    font-size: 1rem;
+                    color: #333;
+                    margin-bottom: 10px;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                }
+    
+                p {
+                    font-size: 1rem;
+                    color: #777;
+                    line-height: 1.5;
+                }
             }
         }
     }
+    
 }
