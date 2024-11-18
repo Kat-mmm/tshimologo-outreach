@@ -136,6 +136,7 @@
     }
 
     .left{
+        position: relative;
         width: 95%;
         height: 100%;
         display: grid;
@@ -154,6 +155,8 @@
         height: fit-content;
 
         .left{
+            position: relative;
+            overflow: hidden;
             width: 100%;
             display: grid;
             place-items: center;
